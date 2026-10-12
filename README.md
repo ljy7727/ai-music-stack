@@ -40,12 +40,12 @@
 | 7 | **MOSS-TTS / MOSS-SoundEffect**<br><sub>OpenMOSS/MOSS-TTS</sub> | 中英双语**语音合成** + **音效生成**（48 kHz，Apache-2.0 可商用） | 4,198 | Apache-2.0 | **8.0** | ⚠️ **勉强**（≈10GB 权重） |
 | 8 | **Stable Audio 3**<br><sub>Stability-AI/stable-audio-3</sub> | 文生**音乐/音效**（medium / large 两档） | 798 | MIT | **8.0** | ⚠️ **勉强**（medium 权重 9.9GB；CPU 生成几十秒音频需数分钟起） |
 | 9 | **Stable Audio Open**<br><sub>Stability-AI/stable-audio-tools</sub> | 文生**短音频/音效**（1.1B，轻量档） | 3,881 | MIT | **7.5** | ⚠️ **勉强**（CPU 可跑，慢） |
-| 10 | **MMAudio**<br><sub>hkchengrex/MMAudio</sub> | **视频/文本 → 音效**（给视频自动配音效），也能文字生音效 | 2,278 | MIT | **8.0** | ❌ **不推荐**（需 ≈6GB 显存；核显共享内存勉强，CPU 极慢） |
+| 10 | **MMAudio**<br><sub>hkchengrex/MMAudio</sub> | **视频/文本 → 音效**（给视频自动配音效），也能文字生音效 | 2,278 | MIT<br><sub>⚠️ 权重 CC-BY-NC</sub> | **8.0** | ❌ **不推荐**（需 ≈6GB 显存；核显共享内存勉强，CPU 极慢） |
 | 11 | **MagentaRT 2**<br><sub>magenta/magenta-realtime</sub> | **实时**流式音乐生成（边弹边出音） | 1,821 | Apache-2.0 | **7.5** | ❌ **不能用**（官方只支持 Apple Silicon 与 NVIDIA GPU，无 CPU/核显推理路径） |
-| 12 | **HeartMuLa / heartlib**<br><sub>HeartMuLa/heartlib</sub> | 歌词+标签 → 音乐（多语言）、HeartCodec 编解码、歌词转写、音频-文本对齐 | 3,746 | 见仓库 | **8.0** | ⚠️ **勉强**（3B 模型） |
+| 12 | **HeartMuLa / heartlib**<br><sub>HeartMuLa/heartlib</sub> | 歌词+标签 → 音乐（多语言）、HeartCodec 编解码、歌词转写、音频-文本对齐 | 3,746 | Apache-2.0 | **8.0** | ⚠️ **勉强**（3B 模型） |
 | 13 | **YingMusic-Singer**<br><sub>GiantAILab/YingMusic-Singer</sub> | 零样本歌声合成 + **编辑**（无标注旋律引导） | 77 | 未声明 | **7.0** | ⚠️ **勉强**（同 SoulX 量级） |
 | 14 | **TangoFlux**<br><sub>declare-lab/TangoFlux</sub> | 文生**音效**（轻量） | 885 | **非商用** | **7.0** | ✅ **能跑**（模型小，CPU 数分钟） |
-| 15 | **Woosh**<br><sub>SonyResearch/woosh-sfx</sub> | 文生 / **视频→音效**（Sony AI） | 390 | Apache-2.0 | **7.0** | ⚠️ **勉强** |
+| 15 | **Woosh**<br><sub>SonyResearch/woosh-sfx</sub> | 文生 / **视频→音效**（Sony AI） | 390 | Apache-2.0<br><sub>⚠️ 权重 CC-BY-NC</sub> | **7.0** | ⚠️ **勉强** |
 
 > **图例**：✅ 能在 Ultra 5 125H 上正常用 ｜ ⚠️ 能跑但慢，只适合偶尔用/小片段 ｜ ❌ 实际不可用
 
@@ -180,10 +180,10 @@ D:\AI\MusicAi\
 
 | 许可 | 项目 | 可否商用 |
 |---|---|---|
-| **MIT** | UVR5、VocalSeparator、RVC、ACE-Step、Stable Audio 3、Stable Audio Open、MMAudio | ✅ 可商用 |
-| **Apache-2.0** | SoulX-Singer、DiffSinger、MOSS-TTS、MagentaRT、Woosh | ✅ 可商用 |
-| **非商用** | **TangoFlux**（权重 CC-BY-NC） | ❌ 仅个人/研究 |
+| **MIT（代码与权重都宽松）** | UVR5、VocalSeparator、RVC、ACE-Step、Stable Audio 3、Stable Audio Open | ✅ 可商用 |
+| **Apache-2.0（代码与权重都宽松）** | SoulX-Singer、DiffSinger、MOSS-TTS、MagentaRT、HeartMuLa | ✅ 可商用 |
+| **代码宽松 / 权重 CC-BY-NC** | **MMAudio**（代码 MIT）、**Woosh**（代码 Apache-2.0） | ⚠️ 代码可商用，**权重禁商用** |
+| **权重 CC-BY-NC（禁商用）** | **TangoFlux** | ❌ 仅个人/研究 |
 | **未声明** | **YingMusic-Singer** | ⚠️ 商用前先联系作者 |
-| **待确认** | HeartMuLa | ⚠️ 以仓库 LICENSE 为准 |
 
 > 另外提醒：**用这些工具处理别人的商业歌曲**，产出物仍然是原版权方的作品，公开发布有侵权风险；自己练手/研究一般没问题。
