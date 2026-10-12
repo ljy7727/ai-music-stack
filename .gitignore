@@ -1,0 +1,8 @@
+# 本仓库只放文档，以下内容一律不入库
+*.part
+*.tmp
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
