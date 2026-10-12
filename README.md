@@ -35,7 +35,7 @@
 | 2 | **VocalSeparator**<br><sub>karaokenerds/python-audio-separator</sub> | 同一批 UVR 模型的**脚本/网页版**：人声·伴奏·四轨·六轨·卡拉OK·去混响·降噪 | 1,413 | MIT | **8.5** | ✅ **能跑**（CPU 慢；换机需重装 CPU 版 torch） |
 | 3 | **ACE-Step 1.5**<br><sub>ace-step/ACE-Step-1.5</sub> | **歌词/文字 → 整首歌**（写词+编曲+演唱+混音）、翻唱、局部重绘、人声配伴奏、LoRA、50+ 语言 | 13,432 | MIT | **9.2** | ⚠️ **勉强**（≈9GB 权重；官方支持 Intel XPU 核显加速，纯 CPU 一首歌要很久） |
 | 4 | **RVC**<br><sub>RVC-Project/…-Voice-Conversion-WebUI</sub> | **人声变声 / 翻唱**，可自训音色模型 | 38,693 | MIT | **9.0** | ✅ **能跑**（CPU 可接受；另有 DirectML 分支可走核显） |
-| 5 | **SoulX-Singer**<br><sub>Soul-AILab/SoulX-Singer</sub> | **零样本歌声合成**（30 秒参考音色就唱新歌，F0/MIDI 双控，中/英/粤）+ 免转写翻唱(SVC) | 997 | Apache-2.0 | **8.0** | ⚠️ **勉强**（权重 5.35GB，CPU 一首歌十几～几十分钟） |
+| 5 | **SoulX-Singer**<br><sub>Soul-AILab/SoulX-Singer</sub> | **零样本歌声合成**（30 秒参考音色就唱新歌，F0/MIDI 双控，中/英/粤）+ 免转写翻唱(SVC) | 997 | Apache-2.0 | **8.0** | ⚠️ **勉强**（权重 **11.8GB**＝主模型 5.35 + 预处理 6.44；CPU 一首歌十几～几十分钟） |
 | 6 | **DiffSinger + OpenUtau**<br><sub>openvpi/DiffSinger</sub> | **音符级**歌声合成，手工调音高/音素，可控性最强 | 3,220 | Apache-2.0 | **8.5** | ✅ **能跑**（模型小，CPU 秒级～十几秒） |
 | 7 | **MOSS-TTS / MOSS-SoundEffect**<br><sub>OpenMOSS/MOSS-TTS</sub> | 中英双语**语音合成** + **音效生成**（48 kHz，Apache-2.0 可商用） | 4,198 | Apache-2.0 | **8.0** | ⚠️ **勉强**（≈10GB 权重） |
 | 8 | **Stable Audio 3**<br><sub>Stability-AI/stable-audio-3</sub> | 文生**音乐/音效**（medium / large 两档） | 798 | MIT | **8.0** | ⚠️ **勉强**（medium 权重 9.9GB；CPU 生成几十秒音频需数分钟起） |
